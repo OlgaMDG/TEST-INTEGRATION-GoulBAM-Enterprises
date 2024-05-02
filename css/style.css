@@ -1,59 +1,38 @@
-/*couleur à voir dans mes fichiers*/
+/*Typographie couleur*/
 :root {
     --marine: #051f43;
+    --blanc: #ffff;
+    --gris: #cccc;
+    --bleu:#0056b3;
+    --noir: #0000;
   }
 
-
-/*rangement des 3 div*/
-  header {
-    /*height: 100%;*/
+/*-----------En-tête-----------*/
+header {
     margin: 0;
     display: flex;
     justify-content: space-between;
-    /*justify-content: center;
-    align-items: center;*/
+    background-color: var(--marine);
 }
 
 .container {
     display: flex;
-    /*justify-content: center;
-    justify-content:space-around;
-    align-items: center;*/
 }
 
 .box {
-    /*width: 100px;
-    height: 100px;*/
     margin: 10px;
-    /*background-color: #f77;*/
     display: flex;
     justify-content:space-between;
     align-items: center;
-    /*color: white;
-    font-size: 16px;*/
     margin: 0 20px;
 }
 
-
-/* div de recherche!!!!!!!!!voir le radius!!!!!!!!!
-le body en bas c'est pour centrer le contenu, si j'enlève le commentaire, tout le contenu sera centré
-  body {
-    background-color: #051f43;
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}*/
-
 .form-recherche {
     display: flex;
-    border: 1px solid #ccc;
+    border: 1px solid var(--gris);
     border-radius: 0 15px 15px 0;
-    /*padding: 5px;*/
     height: 30px;
-    background: #fff;
+    background: var(--blanc);
     width: 500px;
     margin: 0 10px  0 0; 
 }
@@ -69,39 +48,37 @@ le body en bas c'est pour centrer le contenu, si j'enlève le commentaire, tout 
     border: none;
     background-color: transparent;
     padding: 10px;
-    /*color: #0056b3;*/
     cursor: pointer;
     border-radius: 0 5px 5px 0;
     transition: color 0.3s;
 }
 
 .bouton-recherche:hover {
-    color: #0056b3;
+    color:var(--bleu);
 }
 
-
-/* choix en fond tranparent*/
+    /* choix en fond tranparent*/
 select{
-    background-color: #051f43;/*ou transparent*/
-    color: #fff;
+    background-color: var(--marine);/*ou transparent*/
+    color: var(--blanc);
 }
 .form-choix{
     padding: 0 10px  0 0;
 }
 
-/*Boutons dans l'en-tête*/
+    /*Boutons dans l'en-tête*/
 .btn{
-    background-color: #051f43;
-    color: #fff;
+    background-color:var(--marine);
+    color: var(--blanc);
     border: transparent;
 }
 
-/*Boutton survolé, mais ici c'est juste un design, donc on va le laisser apparaître la bordure sur btn-login*/
+    /*Boutton survolé, mais ici c'est juste un design, donc on va le laisser apparaître la bordure sur btn-login*/
 .btn-login{
     border: solid#3595f1 1px;
 }
 
-/* /*calendrie */
+    /*calendrie */
 .feather {
     fill: none;
     stroke: currentColor;
