@@ -2,10 +2,23 @@
 :root {
     --marine: #051f43;
     --blanc: #ffff;
-    --gris: #cccc;
-    --bleu:#0056b3;
+    --bleu: #0056b3;
+    --bleu-clair: #00a2e8;
+    --bleu-foncé: #1b1464;
     --noir: #0000;
+    --gris: #eeee;
+    --gris-1: #e6e6e6;
+    --gris-2: #dddd;
+    --gris-3: #cccc;
+    --gris-4: #333;
   }
+
+
+/*-----------Font-family text-----------*/
+body{
+    font-family: Calibri;
+}
+
 
 /*-----------En-tête-----------*/
 header {
@@ -29,7 +42,7 @@ header {
 
 .form-recherche {
     display: flex;
-    border: 1px solid var(--gris);
+    border: 1px solid var(--gris-3);
     border-radius: 0 15px 15px 0;
     height: 30px;
     background: var(--blanc);
@@ -82,4 +95,142 @@ select{
 .feather {
     fill: none;
     stroke: currentColor;
+}
+
+
+/*-----------Menu sidebar de la page-----------*/
+.sidebar {
+    flex: 0 0 300px; /* Largeur fixe pour la barre latérale */
+    background: var(--gris-1); /* Couleur de fond pour la barre latérale */
+}
+
+.main-content {
+    flex: 1; /* Prend tout l'espace restant */
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0 0 0 40px;
+
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: var(--gris-4);
+    display: block;
+    padding: 5px;
+}
+
+.sidebar ul li a:hover {
+    background-color: var(--gris-2);
+}
+.sidebar i{
+    width: 10%;
+    font-size: 20   px;
+}
+
+.separation-menu{
+    border: 1px solid var(--gris);
+    margin: 0 10px;
+}
+
+    /*Des textes et icônes bleus*/
+.deuxieme-menu{
+    font-size: 24px;
+    color: var(--bleu-clair);
+    text-align: center;
+}
+
+.menu-icon {
+    height: 30px;  /* Hauteur de l'icône */
+    width: auto;   /* Largeur ajustée automatiquement */
+    vertical-align: middle; /* Alignement vertical avec le texte */
+}
+
+    /*Bouton se connecter dans le menu*/
+.center-btn-container{
+    display: flex;                /* Active Flexbox */
+    justify-content: center;      /* Centre horizontalement */
+    align-items: center;          /* Centre verticalement */
+}
+.center-btn-container button{
+    border: 1px solid var(--bleu-clair);
+    padding: 5px 10px;
+    margin: 10px;
+}
+
+/*-----------Corps de la page-----------*/
+    /*Nouveauté*/
+.corps{
+    padding: 0 73px 25px 73px;
+}
+
+h2{
+    padding: 0 73px;
+    color: var(--marine);
+
+}
+    /*Grid*/
+video{
+    width: 175px;
+    height: 120px; 
+    padding-right: 3px;
+}
+
+.titre{
+    font-size: 20px;
+}
+
+.description{
+    font-size: 18px;
+}
+.nb-vu{
+    font-size: 18px;
+    color:#aaaa;
+    margin: 3px;
+}
+    
+    /*Ligne de séparation*/
+.separation{
+    border: 1px solid var(--gris-3);
+    margin: 0 50px;
+}
+
+    /*Entreprise BTP*/
+.aligne {
+    display: flex;        /* Active Flexbox */
+    justify-content: space-between; /* Répartit l'espace entre les éléments à l'intérieur du conteneur */
+    align-items: center;  /* Centre les éléments verticalement */
+    padding: 0 73px 0 0;
+}
+.aligne button{
+    background-color: var(--bleu-foncé);
+    color: var(--blanc);
+    font-size: 15px;
+    padding: 5px;
+}
+
+
+/*-----------Footer-----------*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 73px;
+}
+
+.footer-column {
+    flex: 1;  /* Assure que toutes les colonnes prennent une part égale de l'espace */
+    padding: 10px;
+}
+
+.footer-column a{
+    text-decoration: none;
+    color: var(--gris-4);
+}
+.footer-column a:hover{
+    color: var(--bleu-clair);
+}
+
+.footer-column li{
+    list-style: none;
 }
