@@ -1,3 +1,5 @@
+/*---------------------------------------- Recommadations générale -------------------------------------------*/
+
 /*Typographie couleur*/
 :root {
     --marine: #051f43;
@@ -13,14 +15,13 @@
     --gris-4: #333;
   }
 
-
-/*-----------Font-family text-----------*/
+/*Font-family de la page*/
 body{
     font-family: Calibri;
 }
 
 
-/*-----------En-tête-----------*/
+/*---------------------------------------- En-tête de la page -------------------------------------------*/
 header {
     margin: 0;
     display: flex;
@@ -33,36 +34,35 @@ header {
 }
 
 .box {
-    margin: 10px;
     display: flex;
     justify-content:space-between;
     align-items: center;
-    margin: 0 20px;
+    margin: 0 2em;
 }
+
+    /*Barre de recherche*/
 
 .form-recherche {
     display: flex;
     border: 1px solid var(--gris-3);
-    border-radius: 0 15px 15px 0;
-    height: 30px;
+    border-radius: 0 5em 5em 0;
+    height: 2em;
     background: var(--blanc);
-    width: 500px;
-    margin: 0 10px  0 0; 
+    width: 30em;
+    margin: 0 2em  0 0; 
 }
 
 .input-recherche {
     border: none;
-    padding: 10px;
-    width: 500px;
-    border-radius: 5px 0 0 5px;
+    padding: 1em;
+    width: 100em;
 }
 
 .bouton-recherche {
     border: none;
     background-color: transparent;
-    padding: 10px;
+    padding: 0.75em;
     cursor: pointer;
-    border-radius: 0 5px 5px 0;
     transition: color 0.3s;
 }
 
@@ -70,16 +70,18 @@ header {
     color:var(--bleu);
 }
 
-    /* choix en fond tranparent*/
+    /* Barre select */
+
 select{
     background-color: var(--marine);/*ou transparent*/
     color: var(--blanc);
 }
 .form-choix{
-    padding: 0 10px  0 0;
+    padding: 0 1em  0 0;
 }
 
     /*Boutons dans l'en-tête*/
+
 .btn{
     background-color:var(--marine);
     color: var(--blanc);
@@ -87,21 +89,39 @@ select{
 }
 
     /*Boutton survolé, mais ici c'est juste un design, donc on va le laisser apparaître la bordure sur btn-login*/
+
 .btn-login{
-    border: solid#3595f1 1px;
+    border: solid var(--bleu-clair) 1px;
 }
 
     /*calendrie */
+
 .feather {
     fill: none;
     stroke: currentColor;
 }
 
+    /*User connecté*/
 
-/*-----------Menu sidebar de la page-----------*/
+.user{
+    display: flex;
+    align-items: center;
+}
+.name{
+    color: var(--blanc);
+    font-size: 0.90em;
+    flex: 1;
+}
+
+.profil{
+        margin: 0 1em; 
+}
+
+/*-------------------- Menu sidebar de la page --------------------*/
+
 .sidebar {
-    flex: 0 0 300px; /* Largeur fixe pour la barre latérale */
-    background: var(--gris-1); /* Couleur de fond pour la barre latérale */
+    flex: 0 0 20em;
+    background: var(--gris-1);
 }
 
 .main-content {
@@ -110,15 +130,14 @@ select{
 
 .sidebar ul {
     list-style-type: none;
-    padding: 0 0 0 40px;
-
+    padding: 0 0 0 5em;
 }
 
 .sidebar ul li a {
     text-decoration: none;
     color: var(--gris-4);
     display: block;
-    padding: 5px;
+    padding: 0.2em;
 }
 
 .sidebar ul li a:hover {
@@ -126,7 +145,7 @@ select{
 }
 .sidebar i{
     width: 10%;
-    font-size: 20   px;
+    font-size: 1.2em;
 }
 
 .separation-menu{
@@ -134,43 +153,82 @@ select{
     margin: 0 10px;
 }
 
+    /*Menu abonnement*/
+
+.sidebar .abonnement li {
+    position: relative; /* Définir la position relative pour l'élément li */
+}
+.sidebar .abonnement li {
+    position: relative; /* Définir la position relative pour l'élément li */
+    padding-left: 2em; 
+}
+
+.sidebar .abonnement li:before {
+    content: ""; /* Ajoutez un pseudo-élément pour créer le marqueur de liste */
+    position: absolute; /* Positionnez de manière absolue par rapport à l'élément li parent */
+    left: -1.90em; 
+    top: 50%; 
+    transform: translateY(-50%);
+    width: 0.7em; 
+    height: 0.7em; 
+    border-radius: 50%; /* Transformez le marqueur en cercle */
+    background-color: var(--bleu-clair);
+    margin: 0 0 0 2em;
+}
+
+.abonnement ul{
+    list-style-type: block;
+}
+
+    /*Menu Settings user*/
+
+.dernier-icone i{
+    font-size: 1.5em;
+    padding: 0.25em;
+}
+
     /*Des textes et icônes bleus*/
-.deuxieme-menu{
-    font-size: 24px;
+.titre-menu{
+    font-size: 1.5em;
     color: var(--bleu-clair);
     text-align: center;
 }
 
 .menu-icon {
-    height: 30px;  /* Hauteur de l'icône */
-    width: auto;   /* Largeur ajustée automatiquement */
+    height: 1.90em; 
+    width: auto; 
     vertical-align: middle; /* Alignement vertical avec le texte */
 }
 
     /*Bouton se connecter dans le menu*/
+
 .center-btn-container{
-    display: flex;                /* Active Flexbox */
+    display: flex;                
     justify-content: center;      /* Centre horizontalement */
     align-items: center;          /* Centre verticalement */
 }
 .center-btn-container button{
     border: 1px solid var(--bleu-clair);
-    padding: 5px 10px;
-    margin: 10px;
+    padding: 0.50em 1em;
+    margin: 0.75em;
 }
 
-/*-----------Corps de la page-----------*/
+/*-------------------- Partie centrale du corps de la page --------------------------*/
+
     /*Nouveauté*/
-.corps{
-    padding: 0 73px 25px 73px;
+    
+.categorie{
+    padding: 0 4.25em 1.5em 4.25em;
+
 }
 
 h2{
-    padding: 0 73px;
+    padding: 0 2.75em;
     color: var(--marine);
 
 }
     /*Grid*/
+    
 video{
     width: 175px;
     height: 120px; 
@@ -197,18 +255,22 @@ video{
 }
 
     /*Entreprise BTP*/
-.aligne {
+.btn-anonne{
     display: flex;        /* Active Flexbox */
     justify-content: space-between; /* Répartit l'espace entre les éléments à l'intérieur du conteneur */
     align-items: center;  /* Centre les éléments verticalement */
     padding: 0 73px 0 0;
 }
-.aligne button{
+.btn-anonne button{
     background-color: var(--bleu-foncé);
     color: var(--blanc);
     font-size: 15px;
     padding: 5px;
 }
+
+/*-----------Lecture page-----------*/
+
+
 
 
 /*-----------Footer-----------*/

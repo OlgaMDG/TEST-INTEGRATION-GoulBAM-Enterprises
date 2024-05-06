@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>E-AfrikaTV</title>
+</head>
+<body>
+    <!--------------En-tête-------------->
+    <header>
+        <div class="container">
+            <div class="left-logo box">
+                <a href="index.html"><img class="logo" src="images/logo fond petit.png" alt=""></a>
+            </div>
+            <div class="center-filtre box">
+                <form action="/recherche" method="GET" class="form-recherche">
+                    <input type="text" name="q" placeholder="Rechercher sur e-Afrika TV" class="input-recherche">
+                    <button type="submit" class="bouton-recherche"><i class="fa fa-search"></i></button>
+                </form>
+                <form class="form-choix">
+                    <select id="country" name="country">
+                        <option value="">Choisir un Pays</option>
+                        <option value="fr">France</option>
+                        <option value="us">Belgique</option>
+                        <option value="uk">Afrique</option>
+                        <option value="ca">Canada</option>
+                        <option value="au">Australie</option>
+                    </select>
+                </form>
+            </div>
+            <div class="right-etat box">
+                <div class="user">
+                    <div class="name">Hello Gilles Fabrizio</div>
+                    <div class="profil"><img src="images/profil.png" alt=""></div>
+                </div>
+                <!--changer peut-être la langue en select mais pas boutton?????-->
+                <div class="language">
+                    <button class="btn btn-langue">Langue</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <nav class="sidebar">
+            <ul>
+                <li><a href=""><i class="fa fa-home"></i>Accueil</a></li>
+                <li><a href=""><i class="fa fa-plus-circle"></i>Nouveautés</a></li>
+                <li><a href=""><i class="fa fa-play-circle"></i>En direct</a></li>
+                <li><a href=""><i class="fa fa-calendar-alt"></i>Historique</a></li>
+            </ul>
+            <div class="separation-menu"></div>
+            <div class="titre-menu">LE MEILLEUR DE e-Afrika TV</div>
+                <ul>
+                    <li><a href=""><img src="images/camera-bleu.png" alt="Caméra" class="menu-icon"> Spots Vidéos</a></li>
+                    <li><a href=""><img src="images/journal-bleu.png" alt="Caméra" class="menu-icon">Actualités</a></li>
+                    <li><a href=""><img src="images/clap-bleu.png" alt="Caméra" class="menu-icon">Autres Vidéos</a></li>
+                    <li><a href=""><img src="images/play-bleu.png" alt="Caméra" class="menu-icon">En direct</a></li>
+                    <li><a href=""><img src="images/tv-bleu.png" alt="Caméra" class="menu-icon">Les chaînes e-Afrika TV</a></li>
+                </ul>
+            <div class="separation-menu"></div>
+            <div class="titre-menu">MES ABONNEMENTS</div>
+                <ul class="abonnement">
+                    <li><a href="">Télécoms</a></li>
+                    <li><a href="">Agro-alimentaire</a></li>
+                    <li><a href="">BTP</a></li>
+                    <li><a href="">Industrie Textile</a></li>
+                </ul>
+            <div class="separation-menu"></div>
+            <div class="center-btn-container">
+                <button type="button">Se Donnecter</button>
+            </div>
+            <div class="separation-menu"></div>
+                <ul class="dernier-icone">
+                    <li><i class="fa fa-cog fa-2x"></i>Paramètres</li>
+                    <li><i class="fa fa-question-circle fa-2x"></i>Aide</li>
+                    <li><i class="fa fa-comment-alt fa-2x"></i>Votre Avis</li>
+                </ul>
+        </nav>
+        <main>
+            <div class="nouveaute">
+                <h2>Nouveautés</h2>
+                <div class="container corps">
+                    <div class="grid-video">
+                        <a href="">
+                            <video>
+                                <source src="media/Test video.mp4" type="video/mp4">
+                                Votre navigateur ne supporte pas la vidéo.
+                            </video>
+                        </a>
+                        <div class="titre">E-Afrika Cameroon - The next teep</div>
+                        <div class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sed diam</div>
+                        <div class="nb-vu">100 M de Vues</div>
+                    </div>
+                    <div class="grid-video">
+                        <a href="">
+                            <video>
+                                <source src="media/Test video.mp4" type="video/mp4">
+                                Votre navigateur ne supporte pas la vidéo.
+                            </video>
+                        </a>
+                        <div class="titre">E-Afrika Cameroon - The next teep</div>
+                        <div class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sed diam</div>
+                        <div class="nb-vu">100 M de Vues</div>
+                    </div>
+                    <div class="grid-video">
+                        <a href="">
+                            <video>
+                                <source src="media/Test video.mp4" type="video/mp4">
+                                Votre navigateur ne supporte pas la vidéo.
+                            </video>
+                        </a>
+                        <div class="titre">E-Afrika Cameroon - The next teep</div>
+                        <div class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sed diam</div>
+                        <div class="nb-vu">100 M de Vues</div>
+                    </div>
+                    <div class="grid-video">
+                        <a href="">
+                            <video>
+                                <source src="media/Test video.mp4" type="video/mp4">
+                                Votre navigateur ne supporte pas la vidéo.
+                            </video>
+                        </a>
+                        <div class="titre">E-Afrika Cameroon - The next teep</div>
+                        <div class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sed diam</div>
+                        <div class="nb-vu">100 M de Vues</div>
+                    </div>
+                    <div class="grid-video">
+                        <a href="">
+                            <video>
+                                <source src="media/Test video.mp4" type="video/mp4">
+                                Votre navigateur ne supporte pas la vidéo.
+                            </video>
+                        </a>
+                        <div class="titre">E-Afrika Cameroon - The next teep</div>
+                        <div class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sed diam</div>
+                        <div class="nb-vu">100 M de Vues</div>
+                    </div>
+                </div>
+            </div>
+            <div class="separation"></div>
+            <div class="ebtp">
+                <div class="aligne">
+                    <h2>Entreprises BTP</h2>
+                    <button>S'ABONNER 100M</button>
+                </div>
+                <div class="container corps">
+                    <div class="grid-video">
+                        <a href="">
+                            <video>
+                                <source src="media/Test video.mp4" type="video/mp4">
+                                Votre navigateur ne supporte pas la vidéo.
+                            </video>
+                        </a>
+                        <div class="titre">E-Afrika Cameroon - The next teep</div>
+                        <div class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sed diam</div>
+                        <div class="nb-vu">100 M de Vues</div>
+                    </div>
+                    <div class="grid-video">
+                        <a href="">
+                            <video>
+                                <source src="media/Test video.mp4" type="video/mp4">
+                                Votre navigateur ne supporte pas la vidéo.
+                            </video>
+                        </a>
+                        <div class="titre">E-Afrika Cameroon - The next teep</div>
+                        <div class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sed diam</div>
+                        <div class="nb-vu">100 M de Vues</div>
+                    </div>
+                    <div class="grid-video">
+                        <a href="">
+                            <video>
+                                <source src="media/Test video.mp4" type="video/mp4">
+                                Votre navigateur ne supporte pas la vidéo.
+                            </video>
+                        </a>
+                        <div class="titre">E-Afrika Cameroon - The next teep</div>
+                        <div class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sed diam</div>
+                        <div class="nb-vu">100 M de Vues</div>
+                    </div>
+                    <div class="grid-video">
+                        <a href="">
+                            <video>
+                                <source src="media/Test video.mp4" type="video/mp4">
+                                Votre navigateur ne supporte pas la vidéo.
+                            </video>
+                        </a>
+                        <div class="titre">E-Afrika Cameroon - The next teep</div>
+                        <div class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sed diam</div>
+                        <div class="nb-vu">100 M de Vues</div>
+                    </div>
+                    <div class="grid-video">
+                        <a href="">
+                            <video>
+                                <source src="media/Test video.mp4" type="video/mp4">
+                                Votre navigateur ne supporte pas la vidéo.
+                            </video>
+                        </a>
+                        <div class="titre">E-Afrika Cameroon - The next teep</div>
+                        <div class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sed diam</div>
+                        <div class="nb-vu">100 M de Vues</div>
+                    </div>
+            </div>
+        </main>
+    </div>
+    <div class="separation"></div>
+    <footer>
+        <div class="footer-column">
+            <div class="footer-titre">A propos d'e-Afrika</div>
+            <ul>
+                <li><a href="">Qui Sommes-nous?</a></li>
+                <li><a href="">Conditions Générales d’Utilisation</a></li>
+                <li><a href="">Politique de Confidentialité</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <div class="footer-titre">Suivez-nous</div>
+            <ul>
+                <li><a href="">Youtube</a></li>
+                <li><a href="">Instagram</a></li>
+                <li><a href="">Facebook</a></li>
+                <li><a href="">Twitter</a></li>
+                <li><a href="">LinkedIn</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <div class="footer-titre">Contactez-nous</div>
+            <ul>
+                <li><a href="mailto:e-mail: data@e-afrika.com">e-mail: data@e-afrika.com</a></li>
+                <li>Hotline: +239 699 99 84 03</li>
+            </ul>
+        </div>
+        <div class="footer-column">Alertes</div>
+    </footer>
+</body>
+</html>
