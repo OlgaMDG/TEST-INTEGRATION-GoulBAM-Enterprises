@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>E-AfrikaTV</title>
 </head>
 <body>
-    <!--------------En-tête-------------->
+
+    <!-- --------------------------------------- En-tête de la page ----------------------------------------------- -->
+
     <header>
         <div class="container">
             <div class="left-logo box">
@@ -43,8 +45,17 @@
             </div>
         </div>
     </header>
-    <div class="container">
-        <nav class="sidebar">
+
+    <!-- --------------------------------------- Corps de la page ----------------------------------------------- -->
+
+    <div class="container container-lecture">
+
+        <!---- Menu latérale gauche ---->
+        
+        <nav class="sidebar-left">
+
+            <!---- Première partie ---->
+
             <ul>
                 <li><a href=""><i class="fa fa-home"></i>Accueil</a></li>
                 <li><a href=""><i class="fa fa-plus-circle"></i>Nouveautés</a></li>
@@ -52,15 +63,21 @@
                 <li><a href=""><i class="fa fa-calendar-alt"></i>Historique</a></li>
             </ul>
             <div class="separation-menu"></div>
+
+            <!---- Deuxième partie ---->
+
             <div class="titre-menu">LE MEILLEUR DE e-Afrika TV</div>
-                <ul>
-                    <li><a href=""><img src="images/camera-bleu.png" alt="Caméra" class="menu-icon"> Spots Vidéos</a></li>
-                    <li><a href=""><img src="images/journal-bleu.png" alt="Caméra" class="menu-icon">Actualités</a></li>
-                    <li><a href=""><img src="images/clap-bleu.png" alt="Caméra" class="menu-icon">Autres Vidéos</a></li>
-                    <li><a href=""><img src="images/play-bleu.png" alt="Caméra" class="menu-icon">En direct</a></li>
-                    <li><a href=""><img src="images/tv-bleu.png" alt="Caméra" class="menu-icon">Les chaînes e-Afrika TV</a></li>
-                </ul>
+            <ul>
+                <li><a href=""><img src="images/camera-bleu.png" alt="Caméra" class="menu-icon"> Spots Vidéos</a></li>
+                <li><a href=""><img src="images/journal-bleu.png" alt="Caméra" class="menu-icon">Actualités</a></li>
+                <li><a href=""><img src="images/clap-bleu.png" alt="Caméra" class="menu-icon">Autres Vidéos</a></li>
+                <li><a href=""><img src="images/play-bleu.png" alt="Caméra" class="menu-icon">En direct</a></li>
+                <li><a href=""><img src="images/tv-bleu.png" alt="Caméra" class="menu-icon">Les chaînes e-Afrika TV</a></li>
+            </ul>
             <div class="separation-menu"></div>
+
+            <!---- Troisième partie ---->
+
             <div class="titre-menu">MES ABONNEMENTS</div>
                 <ul class="abonnement">
                     <li><a href="">Télécoms</a></li>
@@ -69,143 +86,136 @@
                     <li><a href="">Industrie Textile</a></li>
                 </ul>
             <div class="separation-menu"></div>
+
+            <!---- Quatrième partie ---->
+
             <div class="center-btn-container">
                 <button type="button">Se Donnecter</button>
             </div>
             <div class="separation-menu"></div>
+
+            <!---- Cinquième partie ---->
+
                 <ul class="dernier-icone">
                     <li><i class="fa fa-cog fa-2x"></i>Paramètres</li>
                     <li><i class="fa fa-question-circle fa-2x"></i>Aide</li>
                     <li><i class="fa fa-comment-alt fa-2x"></i>Votre Avis</li>
                 </ul>
         </nav>
-        <main>
-            <div class="nouveaute">
-                <h2>Nouveautés</h2>
-                <div class="container corps">
-                    <div class="grid-video">
-                        <a href="">
-                            <video>
-                                <source src="media/Test video.mp4" type="video/mp4">
-                                Votre navigateur ne supporte pas la vidéo.
-                            </video>
-                        </a>
-                        <div class="titre">E-Afrika Cameroon - The next teep</div>
-                        <div class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sed diam</div>
-                        <div class="nb-vu">100 M de Vues</div>
-                    </div>
-                    <div class="grid-video">
-                        <a href="">
-                            <video>
-                                <source src="media/Test video.mp4" type="video/mp4">
-                                Votre navigateur ne supporte pas la vidéo.
-                            </video>
-                        </a>
-                        <div class="titre">E-Afrika Cameroon - The next teep</div>
-                        <div class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sed diam</div>
-                        <div class="nb-vu">100 M de Vues</div>
-                    </div>
-                    <div class="grid-video">
-                        <a href="">
-                            <video>
-                                <source src="media/Test video.mp4" type="video/mp4">
-                                Votre navigateur ne supporte pas la vidéo.
-                            </video>
-                        </a>
-                        <div class="titre">E-Afrika Cameroon - The next teep</div>
-                        <div class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sed diam</div>
-                        <div class="nb-vu">100 M de Vues</div>
-                    </div>
-                    <div class="grid-video">
-                        <a href="">
-                            <video>
-                                <source src="media/Test video.mp4" type="video/mp4">
-                                Votre navigateur ne supporte pas la vidéo.
-                            </video>
-                        </a>
-                        <div class="titre">E-Afrika Cameroon - The next teep</div>
-                        <div class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sed diam</div>
-                        <div class="nb-vu">100 M de Vues</div>
-                    </div>
-                    <div class="grid-video">
-                        <a href="">
-                            <video>
-                                <source src="media/Test video.mp4" type="video/mp4">
-                                Votre navigateur ne supporte pas la vidéo.
-                            </video>
-                        </a>
-                        <div class="titre">E-Afrika Cameroon - The next teep</div>
-                        <div class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sed diam</div>
-                        <div class="nb-vu">100 M de Vues</div>
-                    </div>
+
+        <!---- Contenu du corps ---->
+
+
+            <!---- Corps central Lecture de vidéo ---->
+            
+
+            <div class="video-content">
+                <div class="lecteur-video">
+                    <a href="">
+                        <video class="video-lu" controls>
+                            <source src="media/Test video.mp4" type="video/mp4">
+                            Votre navigateur ne supporte pas la vidéo.
+                        </video>
+                    </a>
+                    <div class="titre">E-Afrika Cameroon - The next teep</div>
+                    <div class="nb-vu">100 M de Vues</div>
                 </div>
+                <div class="separation separation-lecture"></div>
+
+                <!---- Espace commentaires ---->
+
+                <div class="commentaires">
+                    <div class="btn-abonne btn-commentaire">
+                        <h2 class="coms">Commentaires</h2>
+                        <button class="btn-coms">S'ABONNER 100 M</button>
+                    </div>
+                    <div class="deux-commentaire">
+                        <div class="commebtaire">
+                            <div class="profil"><img src="images/profil.png" alt=""></div>
+                            <div class="paragraphe-commentaire">
+                                <div class="titre-coms">Lorem ipsum</div>
+                                <div class="text-coms">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi  </div>
+                            </div>
+                        </div>
+                        <div class="commebtaire">
+                            <div class="profil"><img src="images/profil.png" alt=""></div>
+                            <div class="paragraphe-commentaire">
+                                <div class="titre-coms">Lorem ipsum</div>
+                                <div class="text-coms">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi  </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="commentaire"></div>
+                </div>
+            </div>
+ 
+
+        <!---- Barre latérale droite ---->
+        
+        <div class="sidebar-right">
+            <div class="titre titre-bleu">A suivre</div>
+
+            <!---- Première grid de vidéo ---->
+
+            <div class="grid-video">
+                <a href="">
+                    <video class="video video-lateral">
+                        <source src="media/Test video.mp4" type="video/mp4">
+                        Votre navigateur ne supporte pas la vidéo.
+                    </video>
+                </a>
+                <div class="titre">E-Afrika Cameroon - The next teep</div>
+                <div class="nb-vu vu-lateral">100 M de Vues</div>
             </div>
             <div class="separation"></div>
-            <div class="ebtp">
-                <div class="aligne">
-                    <h2>Entreprises BTP</h2>
-                    <button>S'ABONNER 100M</button>
-                </div>
-                <div class="container corps">
-                    <div class="grid-video">
-                        <a href="">
-                            <video>
-                                <source src="media/Test video.mp4" type="video/mp4">
-                                Votre navigateur ne supporte pas la vidéo.
-                            </video>
-                        </a>
-                        <div class="titre">E-Afrika Cameroon - The next teep</div>
-                        <div class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sed diam</div>
-                        <div class="nb-vu">100 M de Vues</div>
-                    </div>
-                    <div class="grid-video">
-                        <a href="">
-                            <video>
-                                <source src="media/Test video.mp4" type="video/mp4">
-                                Votre navigateur ne supporte pas la vidéo.
-                            </video>
-                        </a>
-                        <div class="titre">E-Afrika Cameroon - The next teep</div>
-                        <div class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sed diam</div>
-                        <div class="nb-vu">100 M de Vues</div>
-                    </div>
-                    <div class="grid-video">
-                        <a href="">
-                            <video>
-                                <source src="media/Test video.mp4" type="video/mp4">
-                                Votre navigateur ne supporte pas la vidéo.
-                            </video>
-                        </a>
-                        <div class="titre">E-Afrika Cameroon - The next teep</div>
-                        <div class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sed diam</div>
-                        <div class="nb-vu">100 M de Vues</div>
-                    </div>
-                    <div class="grid-video">
-                        <a href="">
-                            <video>
-                                <source src="media/Test video.mp4" type="video/mp4">
-                                Votre navigateur ne supporte pas la vidéo.
-                            </video>
-                        </a>
-                        <div class="titre">E-Afrika Cameroon - The next teep</div>
-                        <div class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sed diam</div>
-                        <div class="nb-vu">100 M de Vues</div>
-                    </div>
-                    <div class="grid-video">
-                        <a href="">
-                            <video>
-                                <source src="media/Test video.mp4" type="video/mp4">
-                                Votre navigateur ne supporte pas la vidéo.
-                            </video>
-                        </a>
-                        <div class="titre">E-Afrika Cameroon - The next teep</div>
-                        <div class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sed diam</div>
-                        <div class="nb-vu">100 M de Vues</div>
-                    </div>
+
+            <!---- Deuxième grid de vidéo ---->
+
+            <div class="grid-video">
+                <a href="">
+                    <video class="video video-lateral">
+                        <source src="media/Test video.mp4" type="video/mp4">
+                        Votre navigateur ne supporte pas la vidéo.
+                    </video>
+                </a>
+                <div class="titre">E-Afrika Cameroon - The next teep</div>
+                <div class="nb-vu vu-lateral">100 M de Vues</div>
             </div>
-        </main>
+            <div class="separation"></div>
+
+            <!---- Troisième grid de vidéo ---->
+
+            <div class="grid-video">
+                <a href="">
+                    <video class="video video-lateral">
+                        <source src="media/Test video.mp4" type="video/mp4">
+                        Votre navigateur ne supporte pas la vidéo.
+                    </video>
+                </a>
+                <div class="titre">E-Afrika Cameroon - The next teep</div>
+                <div class="nb-vu vu-lateral">100 M de Vues</div>
+            </div>
+            <div class="separation"></div>
+
+            <!---- Quatrième grid de vidéo ---->
+
+            <div class="grid-video">
+                <a href="">
+                    <video class="video video-lateral">
+                        <source src="media/Test video.mp4" type="video/mp4">
+                        Votre navigateur ne supporte pas la vidéo.
+                    </video>
+                </a>
+                <div class="titre">E-Afrika Cameroon - The next teep</div>
+                <div class="nb-vu vu-lateral">100 M de Vues</div>
+            </div>
+        </div>
     </div>
-    <div class="separation"></div>
+
+    <div class="separation-finale"></div>
+
+    <!-- --------------------------------------- Pieds de la page ----------------------------------------------- -->
+
     <footer>
         <div class="footer-column">
             <div class="footer-titre">A propos d'e-Afrika</div>
@@ -232,7 +242,17 @@
                 <li>Hotline: +239 699 99 84 03</li>
             </ul>
         </div>
-        <div class="footer-column">Alertes</div>
+        <div class="footer-column">
+            <div class="footer-titre">Alertes</div>
+            <form action="/envoyer" method="" class="form-contact">
+                <button type="submit" class="btn-footer mail">e-mail</button>
+                <input type="text" name="x" placeholder="" class="input-contact">
+            </form>
+            <form action="/envoyer" method="" class="form-contact">
+                <button type="submit" class="btn-footer phone">Phone</button>
+                <input type="text" name="y" placeholder="" class="input-contact">
+            </form>
+        </div>    
     </footer>
 </body>
 </html>

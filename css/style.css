@@ -117,9 +117,11 @@ select{
         margin: 0 1em; 
 }
 
-/*-------------------- Menu sidebar de la page --------------------*/
+/*---------------------------------------- Corps de la page -------------------------------------------*/
 
-.sidebar {
+/*-------------------- Barre gauche de la page ou Menu --------------------*/
+
+.sidebar-left {
     flex: 0 0 20em;
     background: var(--gris-1);
 }
@@ -128,42 +130,42 @@ select{
     flex: 1; /* Prend tout l'espace restant */
 }
 
-.sidebar ul {
+.sidebar-left ul {
     list-style-type: none;
     padding: 0 0 0 5em;
 }
 
-.sidebar ul li a {
+.sidebar-left ul li a {
     text-decoration: none;
     color: var(--gris-4);
     display: block;
     padding: 0.2em;
 }
 
-.sidebar ul li a:hover {
+.sidebar-left ul li a:hover {
     background-color: var(--gris-2);
 }
-.sidebar i{
+.sidebar-left i{
     width: 10%;
     font-size: 1.2em;
 }
 
 .separation-menu{
     border: 1px solid var(--gris);
-    margin: 0 10px;
+    margin: 1em;
 }
 
     /*Menu abonnement*/
 
-.sidebar .abonnement li {
+.sidebar-left .abonnement li {
     position: relative; /* Définir la position relative pour l'élément li */
 }
-.sidebar .abonnement li {
+.sidebar-left .abonnement li {
     position: relative; /* Définir la position relative pour l'élément li */
     padding-left: 2em; 
 }
 
-.sidebar .abonnement li:before {
+.sidebar-left .abonnement li:before {
     content: ""; /* Ajoutez un pseudo-élément pour créer le marqueur de liste */
     position: absolute; /* Positionnez de manière absolue par rapport à l'élément li parent */
     left: -1.90em; 
@@ -228,61 +230,126 @@ h2{
 
 }
     /*Grid*/
-    
-video{
-    width: 175px;
-    height: 120px; 
-    padding-right: 3px;
+
+.video{
+    width: 11em;
+    height: 9em; 
+    padding-right: 0.2em;
 }
 
 .titre{
-    font-size: 20px;
+    font-size: 1.25em;
 }
 
 .description{
-    font-size: 18px;
+    font-size: 1em;
 }
 .nb-vu{
     font-size: 18px;
-    color:#aaaa;
-    margin: 3px;
+    color:var(--marine);
+    margin: 0.75em 0;
 }
     
     /*Ligne de séparation*/
 .separation{
-    border: 1px solid var(--gris-3);
-    margin: 0 50px;
+    border: 1px solid grey;
+    margin: 3em;
 }
 
     /*Entreprise BTP*/
-.btn-anonne{
-    display: flex;        /* Active Flexbox */
+
+.btn-abonne{
+    display: flex;       /* Active Flexbox */
     justify-content: space-between; /* Répartit l'espace entre les éléments à l'intérieur du conteneur */
     align-items: center;  /* Centre les éléments verticalement */
-    padding: 0 73px 0 0;
+    padding: 0 4.25em 0 0;
 }
-.btn-anonne button{
+.btn-abonne button{
     background-color: var(--bleu-foncé);
     color: var(--blanc);
-    font-size: 15px;
-    padding: 5px;
+    font-size: 1em;
+    padding: 0.3em;
 }
 
 /*-----------Lecture page-----------*/
 
+.container-lecture{
+    justify-content: space-between;
+}
+.video-lu{
+    height: 78vh;
+    width: 48em;
+}
 
+.video-content{
+    padding: 0 1em
+}
 
+/*-------------------- Barre droite de la page --------------------------*/
+
+.video-lateral{
+    height: 8em; 
+    padding-right: 0.2em;
+}
+.sidebar-rigth{
+    display: block;
+}
+
+.titre-bleu{
+    color: var(--bleu);
+}
+.vu-lateral{
+    margin: 0;
+}
+.sidebar-right div.separation{
+    margin: 0.01em;
+}
+
+.sidebar-rigth .grid-video{
+    padding: 0;
+}
+
+.separation-lecture{
+    margin:0.1em ;
+}
+
+.coms{
+    padding: 0;
+}
+
+.btn-commentaire{
+    padding: 0;
+}
+
+.commebtaire{
+    display: flex;
+}
+.titre-coms{
+    font-weight: bold;
+}
+.paragraphe-commentaire{
+    width: 75%;
+}
+
+.separation-finale{
+    border: 1px solid grey;
+    margin: 0 0 0 20em;
+}
 
 /*-----------Footer-----------*/
 footer {
     display: flex;
     justify-content: space-between;
-    padding: 0 73px;
+    padding: 0 4.25em;
 }
 
 .footer-column {
     flex: 1;  /* Assure que toutes les colonnes prennent une part égale de l'espace */
-    padding: 10px;
+    padding: 0.3em;
+}
+
+.footer-titre{
+    font-weight: bold;
 }
 
 .footer-column a{
@@ -296,3 +363,35 @@ footer {
 .footer-column li{
     list-style: none;
 }
+
+    /*Alertes*/
+
+.form-contact {
+    display: flex;
+    border: 1px solid var(--gris-3);
+    border-radius:0.5em;
+    height: 1.5em;
+    background: var(--blanc);
+    width: 18.5em;
+    margin-top: 1em;
+}
+
+.input-contact {
+    border: none;
+    padding: 0.75em;
+    width: 13em;
+}
+
+.btn-footer{
+    border:1px solid var(--gris-3) ;
+    border-radius:0.5em 0 0 0.5em;
+    background-color: var(--gris-2);
+    padding: 0.3em 2em;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.bouton-mail:hover {
+    color:var(--bleu);
+}
+

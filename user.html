@@ -52,7 +52,7 @@
 
         <!---- Menu latérale gauche ---->
 
-        <nav class="sidebar">
+        <nav class="sidebar-left">
 
             <!---- Première partie ---->
 
@@ -68,15 +68,10 @@
 
             <div class="titre-menu">LE MEILLEUR DE e-Afrika TV</div>
                 <ul>
-                    <li><a href=""><img src="images/camera-bleu.png" alt="Caméra" class="menu-icon"> Spots Vidéos</a></li>
+                    <li><a href=""><img src="images/play-bleu.png" alt="Caméra" class="menu-icon"> Spots Vidéos</a></li>
                     <li><a href=""><img src="images/journal-bleu.png" alt="Caméra" class="menu-icon">Actualités</a></li>
                     <li><a href=""><img src="images/clap-bleu.png" alt="Caméra" class="menu-icon">Autres Vidéos</a></li>
-
-
-<!-------------------------------ICONE SUIVANTE AAAAAAAAAAA CHANGER-------------------------------------->
-
-
-                    <li><a href=""><img src="images/play-bleu.png" alt="Caméra" class="menu-icon">En direct</a></li>
+                    <li><a href=""><img src="images/prise-bleu.png" alt="Caméra" class="menu-icon">En direct</a></li>
                     <li><a href=""><img src="images/tv-bleu.png" alt="Caméra" class="menu-icon">Les chaînes e-Afrika TV</a></li>
                 </ul>
             <div class="separation-menu"></div>
@@ -122,7 +117,7 @@
 
                     <div class="grid-video">
                         <a href="">
-                            <video>
+                            <video class="video">
                                 <source src="media/Test video.mp4" type="video/mp4">
                                 Votre navigateur ne supporte pas la vidéo.
                             </video>
@@ -136,7 +131,7 @@
 
                     <div class="grid-video">
                         <a href="">
-                            <video>
+                            <video class="video">
                                 <source src="media/Test video.mp4" type="video/mp4">
                                 Votre navigateur ne supporte pas la vidéo.
                             </video>
@@ -150,7 +145,7 @@
 
                     <div class="grid-video">
                         <a href="">
-                            <video>
+                            <video class="video">
                                 <source src="media/Test video.mp4" type="video/mp4">
                                 Votre navigateur ne supporte pas la vidéo.
                             </video>
@@ -164,7 +159,7 @@
 
                     <div class="grid-video">
                         <a href="">
-                            <video>
+                            <video class="video">
                                 <source src="media/Test video.mp4" type="video/mp4">
                                 Votre navigateur ne supporte pas la vidéo.
                             </video>
@@ -178,7 +173,7 @@
 
                     <div class="grid-video">
                         <a href="">
-                            <video>
+                            <video class="video">
                                 <source src="media/Test video.mp4" type="video/mp4">
                                 Votre navigateur ne supporte pas la vidéo.
                             </video>
@@ -201,7 +196,7 @@
 
                     <div class="grid-video">
                         <a href="">
-                            <video>
+                            <video class="video">
                                 <source src="media/Test video.mp4" type="video/mp4">
                                 Votre navigateur ne supporte pas la vidéo.
                             </video>
@@ -215,7 +210,7 @@
 
                     <div class="grid-video">
                         <a href="">
-                            <video>
+                            <video class="video">
                                 <source src="media/Test video.mp4" type="video/mp4">
                                 Votre navigateur ne supporte pas la vidéo.
                             </video>
@@ -229,7 +224,7 @@
 
                     <div class="grid-video">
                         <a href="">
-                            <video>
+                            <video class="video">
                                 <source src="media/Test video.mp4" type="video/mp4">
                                 Votre navigateur ne supporte pas la vidéo.
                             </video>
@@ -243,7 +238,7 @@
 
                     <div class="grid-video">
                         <a href="">
-                            <video>
+                            <video class="video">
                                 <source src="media/Test video.mp4" type="video/mp4">
                                 Votre navigateur ne supporte pas la vidéo.
                             </video>
@@ -257,7 +252,7 @@
 
                     <div class="grid-video">
                         <a href="">
-                            <video>
+                            <video class="video">
                                 <source src="media/Test video.mp4" type="video/mp4">
                                 Votre navigateur ne supporte pas la vidéo.
                             </video>
@@ -266,6 +261,7 @@
                         <div class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit, sed diam</div>
                         <div class="nb-vu">100 M de Vues</div>
                     </div>
+                </div>
             </div>
         </main>
     </div>
@@ -299,7 +295,17 @@
                 <li>Hotline: +239 699 99 84 03</li>
             </ul>
         </div>
-        <div class="footer-column">Alertes</div>
+        <div class="footer-column">
+            <div class="footer-titre">Alertes</div>
+            <form action="/envoyer" method="" class="form-contact">
+                <button type="submit" class="btn-footer mail">e-mail</button>
+                <input type="text" name="x" placeholder="" class="input-contact">
+            </form>
+            <form action="/envoyer" method="" class="form-contact">
+                <button type="submit" class="btn-footer phone">Phone</button>
+                <input type="text" name="y" placeholder="" class="input-contact">
+            </form>
+        </div>     
     </footer>
 </body>
 </html>
