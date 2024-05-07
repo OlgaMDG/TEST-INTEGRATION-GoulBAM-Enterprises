@@ -321,14 +321,16 @@ h2{
     padding: 0;
 }
 
-.commebtaire{
+.commentaire{
     display: flex;
+    padding-bottom: 1em;
 }
 .titre-coms{
     font-weight: bold;
 }
 .paragraphe-commentaire{
     width: 75%;
+    pa
 }
 
 .separation-finale{
